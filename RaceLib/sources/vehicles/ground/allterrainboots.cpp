@@ -1,9 +1,5 @@
 #include "allterrainboots.h"
-
-#define BOOTS_SPEED 6
-#define BOOTS_MOVE_TO_REST 60
-#define BOOTS_FIRST_REST 10
-#define BOOTS_STANDART_REST 5
+#include "settings.h"
 
 namespace race
 {

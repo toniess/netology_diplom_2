@@ -1,10 +1,5 @@
 #include "camelrunner.h"
-
-#define CAMEL_RUNNER_SPEED 40
-#define CAMEL_RUNNER_MOVE_TO_REST 10
-#define CAMEL_RUNNER_FIRST_REST 5
-#define CAMEL_RUNNER_SECOND_REST 6.5
-#define CAMEL_RUNNER_STANDART_REST 8
+#include "settings.h"
 
 namespace race{
 

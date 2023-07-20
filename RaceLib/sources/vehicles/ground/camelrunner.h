@@ -8,7 +8,7 @@ namespace race {
     {
     public:
         CamelRunner();
-        double time(double distance) const;
+        double time(double distance) const override;
     };
 
 }

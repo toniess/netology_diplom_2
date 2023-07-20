@@ -1,8 +1,5 @@
 #include "centaur.h"
-
-#define CENTAUR_SPEED 15
-#define CENTAUR_MOVE_TO_REST 8
-#define CENTAUR_REST 2
+#include "settings.h"
 
 namespace race{
 

@@ -1,11 +1,16 @@
 #pragma once
-#include "groundvehicle.h"
+
+#include <airvehicle.h>
 
 namespace race
 {
-    class Camel : public GroundVehicle
+
+    class Broom : public AirVehicle
     {
-        Camel();
+    public:
+        Broom();
         double time(double distance) const override;
     };
+
 }
+

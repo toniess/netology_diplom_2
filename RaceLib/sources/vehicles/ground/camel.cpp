@@ -1,9 +1,6 @@
 #include "camel.h"
+#include "settings.h"
 
-#define CAMEL_SPEED 10
-#define CAMEL_MOVE_TO_REST 30
-#define CAMEL_FIRST_REST 5
-#define CAMEL_STANDART_REST 8
 
 namespace race
 {

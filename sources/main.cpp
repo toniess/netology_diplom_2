@@ -1,9 +1,14 @@
 #include <iostream>
-#include "vehicle.h"
-using namespace std;
+#include "game.h"
+
+using namespace race;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    Game g;
+    while(g.play() != GameStatus::EXIT)
+    {
+        system("clear");
+    }
     return 0;
 }

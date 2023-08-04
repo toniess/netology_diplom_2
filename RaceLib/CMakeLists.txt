@@ -14,6 +14,7 @@ include_directories(
 
 add_library(RaceLib SHARED
 
+    sources/vehicles/all_vehicles.h
     sources/vehicles/vehicle.h
     sources/vehicles/settings.h
     sources/vehicles/settings.cpp
@@ -38,4 +39,8 @@ add_library(RaceLib SHARED
     sources/vehicles/ground/allterrainboots.h
     sources/vehicles/ground/allterrainboots.cpp
 
+    sources/logic/game.h
+    sources/logic/game.cpp
+    sources/logic/results.h
+    sources/logic/results.cpp
 )

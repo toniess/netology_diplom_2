@@ -1,0 +1,11 @@
+#pragma once
+#include "vehicle.h"
+#include "groundvehicle.h"
+#include "airvehicle.h"
+#include "allterrainboots.h"
+#include "camel.h"
+#include "camelrunner.h"
+#include "centaur.h"
+#include "magiccarpet.h"
+#include "eagle.h"
+#include "broom.h"

@@ -10,6 +10,7 @@ include_directories(RaceLib/sources/)
 include_directories(RaceLib/sources/vehicles)
 include_directories(RaceLib/sources/vehicles/air)
 include_directories(RaceLib/sources/vehicles/ground)
+include_directories(RaceLib/sources/logic)
 
 
 add_subdirectory(RaceLib)

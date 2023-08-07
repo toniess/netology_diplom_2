@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(
-
     sources/vehicles
     sources/vehicles/air
     sources/vehicles/ground
@@ -16,6 +15,7 @@ add_library(RaceLib SHARED
 
     sources/vehicles/all_vehicles.h
     sources/vehicles/vehicle.h
+    sources/vehicles/vehicle.cpp
     sources/vehicles/settings.h
     sources/vehicles/settings.cpp
 
@@ -38,9 +38,4 @@ add_library(RaceLib SHARED
     sources/vehicles/ground/centaur.cpp
     sources/vehicles/ground/allterrainboots.h
     sources/vehicles/ground/allterrainboots.cpp
-
-    sources/logic/game.h
-    sources/logic/game.cpp
-    sources/logic/results.h
-    sources/logic/results.cpp
 )

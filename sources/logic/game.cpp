@@ -80,6 +80,10 @@ namespace race
                 std::cout << "Необходимо минимум 2 транспортных средства\n";
                 continue;
             }
+            if(choice == r::EXIT)
+            {
+                continue;
+            }
             if(choice == r::BOOTS)
             {
                 vehicles.insert(new AllTerrainBoots());

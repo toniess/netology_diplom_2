@@ -1,5 +1,6 @@
 #include "camelrunner.h"
 #include "settings.h"
+#include <cmath>
 
 namespace race{
 
@@ -11,7 +12,7 @@ namespace race{
     double CamelRunner::time(double distance) const
     {
         double moveTime = distance / CAMEL_RUNNER_SPEED;
-        int restCount = moveTime / CAMEL_RUNNER_MOVE_TO_REST;
+        int restCount = std::ceil(moveTime / CAMEL_RUNNER_MOVE_TO_REST) - 1;
         if(restCount > 0)
         {
             moveTime += CAMEL_RUNNER_FIRST_REST;

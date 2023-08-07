@@ -5,10 +5,17 @@ using namespace race;
 
 int main()
 {
+#ifdef _WIN32
+    system("chcp 65001");
+#endif
     Game g;
     while(g.play() != GameStatus::EXIT)
     {
-        system("clear");
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
     }
     return 0;
 }

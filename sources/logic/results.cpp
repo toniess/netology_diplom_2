@@ -4,7 +4,7 @@ namespace race
 {
     void Results::add(Vehicle *v, double time)
     {
-        results_.insert({v->name, time});
+        results_.insert({v->getName(), time});
     }
 
     std::set<Results::ResultLine>::iterator Results::begin() const

@@ -1,5 +1,6 @@
 #include "allterrainboots.h"
 #include "settings.h"
+#include <cmath>
 
 namespace race
 {
@@ -12,7 +13,7 @@ namespace race
     double AllTerrainBoots::time(double distance) const
     {
         double moveTime = distance / BOOTS_SPEED;
-        int restCount = moveTime / BOOTS_MOVE_TO_REST;
+        int restCount = std::ceil(moveTime / BOOTS_MOVE_TO_REST) - 1;
         if(restCount > 0)
         {
             moveTime += BOOTS_FIRST_REST;

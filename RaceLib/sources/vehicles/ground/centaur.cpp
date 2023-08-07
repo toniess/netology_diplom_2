@@ -1,5 +1,6 @@
 #include "centaur.h"
 #include "settings.h"
+#include <cmath>
 
 namespace race{
 
@@ -11,7 +12,7 @@ namespace race{
     double Centaur::time(double distance) const
     {
         double moveTime = distance / CENTAUR_SPEED;
-        int restCount = moveTime / CENTAUR_MOVE_TO_REST;
+        int restCount = std::ceil(moveTime / CENTAUR_MOVE_TO_REST) - 1;
 
         return moveTime + restCount * CENTAUR_REST;
     }

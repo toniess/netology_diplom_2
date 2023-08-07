@@ -5,18 +5,13 @@ namespace race
 {
     class Vehicle
     {
-    public:
+    protected:
         std::string name;
     public:
-        virtual double time(double distance) const
-        {
-            return 0;
-        }
+        virtual double time(double distance) const;
 
-        bool operator<(const Vehicle& a) const
-        {
-            return name < a.name;
-        }
+        bool operator<(const Vehicle& a) const;
+        std::string getName() const;
     };
 
 }
